@@ -1,0 +1,42 @@
+﻿@model EventWebApp.Models.Participacao
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Participacao</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Evento.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Evento.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usuario.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Confirmado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Confirmado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ParticipacaoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

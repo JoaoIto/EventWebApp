@@ -1,9 +1,48 @@
 ﻿@{
-    ViewBag.Title = "About";
+    ViewBag.Title = "Sobre o Sistema";
+    ViewBag.Message = "Gerenciador de Eventos";
 }
-<main aria-labelledby="title">
-    <h2 id="title">@ViewBag.Title.</h2>
-    <h3>@ViewBag.Message</h3>
 
-    <p>Use this area to provide additional information.</p>
+<main aria-labelledby="title">
+    <h2 id="title" class="text-center my-4">@ViewBag.Title</h2>
+    <h3 class="text-center text-muted mb-4">@ViewBag.Message</h3>
+
+    <div class="row text-center">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <i class="fas fa-calendar-check fa-3x mb-3" style="color: #007bff;"></i>
+                    <h5 class="card-title">Gerenciamento de Eventos</h5>
+                    <p class="card-text">Nosso sistema permite o registro e acompanhamento de eventos, facilitando a organização e a participação.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <i class="fas fa-users fa-3x mb-3" style="color: #28a745;"></i>
+                    <h5 class="card-title">Interação com Participantes</h5>
+                    <p class="card-text">Facilitamos a interação entre organizadores e participantes, garantindo uma melhor experiência para todos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <i class="fas fa-comments fa-3x mb-3" style="color: #ffc107;"></i>
+                    <h5 class="card-title">Comentários e Feedbacks</h5>
+                    <p class="card-text">Permita que os participantes deixem feedbacks e comentários sobre os eventos, ajudando a melhorar futuras edições.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center my-5">
+        <h4>Objetivo do Sistema</h4>
+        <p>O Gerenciador de Eventos foi desenvolvido para simplificar a criação, gestão e participação em eventos, garantindo que todos os envolvidos tenham uma experiência agradável e organizada.</p>
+        <p>Com um design intuitivo e funcionalidades poderosas, buscamos proporcionar uma ferramenta útil tanto para organizadores quanto para participantes.</p>
+    </div>
 </main>
+
+<!-- Inclua o Font Awesome para ícones -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<EventWebApp.Models.Participacao>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Evento.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Usuario.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Confirmado)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Evento.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Usuario.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Confirmado)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ParticipacaoId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ParticipacaoId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ParticipacaoId })
+        </td>
+    </tr>
+}
+
+</table>

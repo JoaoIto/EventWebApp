@@ -2,32 +2,100 @@
     ViewBag.Title = "Home Page";
 }
 
-<main>
-    <section class="row" aria-labelledby="aspnetTitle">
-        <h1 id="title">ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-        <p><a href="https://asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
+<main class="container mt-5">
+    <section class="text-center">
+        <h1 id="title" class="display-4">Bem-vindo ao Gerenciador de Eventos</h1>
+        <p class="lead">Uma aplicação completa para gerenciar eventos, participantes e muito mais!</p>
+        <p>
+            <a href="#" class="btn btn-outline-primary btn-lg">Saiba Mais</a>
+        </p>
     </section>
 
-    <div class="row">
-        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-            <h2 id="gettingStartedTitle">Getting started</h2>
-            <p>
-                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-                enables a clean separation of concerns and gives you full control over markup
-                for enjoyable, agile development.
-            </p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-        </section>
-        <section class="col-md-4" aria-labelledby="librariesTitle">
-            <h2 id="librariesTitle">Get more libraries</h2>
-            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-        </section>
-        <section class="col-md-4" aria-labelledby="hostingTitle">
-            <h2 id="hostingTitle">Web Hosting</h2>
-            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-        </section>
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header d-flex justify-content-center align-items-center">
+                    <i class="fas fa-users fa-2x mr-2" style="color: #007bff;"></i>
+                    <h4 class="my-0 font-weight-normal">Gerenciar Usuários</h4>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Adicione, edite ou remova usuários da sua aplicação.</p>
+                    <a class="btn btn-primary" href="@Url.Action("Index", "Usuarios")">Acessar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header d-flex justify-content-center align-items-center">
+                    <i class="fas fa-user-check fa-2x mr-2" style="color: #28a745;"></i>
+                    <h4 class="my-0 font-weight-normal">Gerenciar Participações</h4>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Gerencie as participações dos usuários nos eventos.</p>
+                    <a class="btn btn-primary" href="@Url.Action("Index", "Participacaos")">Acessar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header d-flex justify-content-center align-items-center">
+                    <i class="fas fa-calendar-alt fa-2x mr-2" style="color: #ffc107;"></i>
+                    <h4 class="my-0 font-weight-normal">Gerenciar Eventos</h4>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Crie, edite ou remova eventos com facilidade.</p>
+                    <a class="btn btn-primary" href="@Url.Action("Index", "Eventoes")">Acessar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header d-flex justify-content-center align-items-center">
+                    <i class="fas fa-comments fa-2x mr-2" style="color: #17a2b8;"></i>
+                    <h4 class="my-0 font-weight-normal">Gerenciar Comentários</h4>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Visualize e modifique os comentários dos usuários sobre os eventos.</p>
+                    <a class="btn btn-primary" href="@Url.Action("Index", "Comentarios")">Acessar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header d-flex justify-content-center align-items-center">
+                    <i class="fas fa-tags fa-2x mr-2" style="color: #6f42c1;"></i>
+                    <h4 class="my-0 font-weight-normal">Gerenciar Categorias</h4>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Organize seus eventos em categorias para facilitar a navegação.</p>
+                    <a class="btn btn-primary" href="@Url.Action("Index", "Categorias")">Acessar</a>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
+
+<!-- Inclua o Font Awesome para ícones -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    .card {
+        border: none;
+    }
+
+    .card-header {
+        background-color: #007bff;
+        color: white;
+    }
+
+    .card-text {
+        margin-bottom: 1.5rem;
+    }
+</style>

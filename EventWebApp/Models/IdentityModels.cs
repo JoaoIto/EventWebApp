@@ -21,7 +21,7 @@ namespace EventWebApp.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("AppDbContext", throwIfV1Schema: false)
         {
         }
 
@@ -29,5 +29,11 @@ namespace EventWebApp.Models
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Participacao> Participacoes { get; set; }
+        public DbSet<Evento> Eventos { get; set; }
+        public DbSet<Comentario> Comentarios { get; set; }
+        public DbSet<Categoria> Categorias { get; set; }
     }
 }

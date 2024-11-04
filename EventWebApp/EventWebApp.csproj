@@ -182,14 +182,29 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CategoriasController.cs" />
+    <Compile Include="Controllers\ComentariosController.cs" />
+    <Compile Include="Controllers\EventoesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ParticipacaosController.cs" />
+    <Compile Include="Controllers\UsuariosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202411032049537_eventDb.cs" />
+    <Compile Include="Migrations\202411032049537_eventDb.Designer.cs">
+      <DependentUpon>202411032049537_eventDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Categoria.cs" />
+    <Compile Include="Models\Comentario.cs" />
+    <Compile Include="Models\Evento.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Participacao.cs" />
+    <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -264,6 +279,36 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Eventoes1\Create.cshtml" />
+    <Content Include="Views\Eventoes1\Delete.cshtml" />
+    <Content Include="Views\Eventoes1\Details.cshtml" />
+    <Content Include="Views\Eventoes1\Edit.cshtml" />
+    <Content Include="Views\Eventoes1\Index.cshtml" />
+    <Content Include="Views\Comentarios\Create.cshtml" />
+    <Content Include="Views\Comentarios\Delete.cshtml" />
+    <Content Include="Views\Comentarios\Details.cshtml" />
+    <Content Include="Views\Comentarios\Edit.cshtml" />
+    <Content Include="Views\Comentarios\Index.cshtml" />
+    <Content Include="Views\Categorias\Create.cshtml" />
+    <Content Include="Views\Categorias\Delete.cshtml" />
+    <Content Include="Views\Categorias\Details.cshtml" />
+    <Content Include="Views\Categorias\Edit.cshtml" />
+    <Content Include="Views\Categorias\Index.cshtml" />
+    <Content Include="Views\Participacaos\Create.cshtml" />
+    <Content Include="Views\Participacaos\Delete.cshtml" />
+    <Content Include="Views\Participacaos\Details.cshtml" />
+    <Content Include="Views\Participacaos\Edit.cshtml" />
+    <Content Include="Views\Participacaos\Index.cshtml" />
+    <Content Include="Views\Usuarios\Create.cshtml" />
+    <Content Include="Views\Usuarios\Delete.cshtml" />
+    <Content Include="Views\Usuarios\Details.cshtml" />
+    <Content Include="Views\Usuarios\Edit.cshtml" />
+    <Content Include="Views\Usuarios\Index.cshtml" />
+    <Content Include="Views\Eventoes\Create.cshtml" />
+    <Content Include="Views\Eventoes\Delete.cshtml" />
+    <Content Include="Views\Eventoes\Details.cshtml" />
+    <Content Include="Views\Eventoes\Edit.cshtml" />
+    <Content Include="Views\Eventoes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -294,6 +339,11 @@
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Scripts\jquery-3.7.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.7.0.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202411032049537_eventDb.resx">
+      <DependentUpon>202411032049537_eventDb.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
