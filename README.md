@@ -79,8 +79,4 @@ A aplicação possui autenticação via Google e Microsoft para controle de aces
 
 Contribuições são bem-vindas. Para isso, faça um fork do repositório, crie uma branch com as alterações e abra um Pull Request.
 
-## Licença
-
-Esse projeto está sob a licença MIT. 
-
 --- 
