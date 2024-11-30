@@ -1,7 +1,3 @@
-Aqui está o **README.md** atualizado com os comandos do Entity Framework para gerenciamento de migrações e banco de dados:
-
----
-
 # EventWebApp
 
 O *EventWebApp* é uma aplicação desenvolvida para o gerenciamento de eventos, voltada para empresas de tecnologia que desejam organizar conferências, reuniões, meets e calls de forma prática e eficiente. A aplicação permite o cadastro e acompanhamento de eventos, além de promover a interação entre os usuários participantes.
@@ -66,10 +62,4 @@ O projeto segue o padrão MVC (Model-View-Controller), e está organizado da seg
 
 Contribuições são bem-vindas. Faça um *fork*, crie uma nova branch, e envie um *Pull Request* com as alterações.
 
-## Licença
-
-Esse projeto está sob a licença MIT.
-
---- 
-
-Com essa seção, qualquer desenvolvedor terá uma explicação clara de como gerenciar as migrações e preparar o banco de dados da aplicação.
+---
